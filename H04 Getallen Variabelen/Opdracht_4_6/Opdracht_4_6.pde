@@ -1,11 +1,14 @@
 float een = 5.5;
 float twee = 6.6;
 float drie = 5.7;
-float gemiddelde = 0;
-float totaal = 0;
+float gemiddelde;
+float totaal;
 
-totaal = (5.5  +  6.6) + 5.7);
+
+totaal = een + twee + drie;
+gemiddelde = totaal /3;
+Math.round(gemiddelde);
 
 println(totaal);
-
-gemiddelde = round (gemiddelde);
+println(gemiddelde);
+println(Math.round(gemiddelde));

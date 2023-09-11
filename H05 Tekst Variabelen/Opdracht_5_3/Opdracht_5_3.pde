@@ -1,9 +1,10 @@
-float kilo = 50;
-float cm = 1.67;
+float kilo = 110;
+float cm = 1.80;
 float totaal;
 
 totaal = kilo / (cm * cm);
 Math.round(totaal);
 
-println(totaal);
-println(Math.round(totaal));
+String BMI = " Jouw BMI is ";
+
+println(BMI + Math.round(totaal));

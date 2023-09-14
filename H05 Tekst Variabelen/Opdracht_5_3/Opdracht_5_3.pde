@@ -5,6 +5,7 @@ float totaal;
 totaal = kilo / (cm * cm);
 Math.round(totaal);
 
-String BMI = " Jouw BMI is ";
+String BMI  = "Met een gewicht van " +  kilo + " en een lengte van " +  cm + " is jouw BMI ";
+
 
 println(BMI + Math.round(totaal));

@@ -1,5 +1,5 @@
 Button[] numberButtons = new Button[10]; // Knoppen voor cijfers 0 t/m 9
-Button addButton, minusButton, multiplyButton, divideButton, equalsButton, clearButton, kommaButton, credButton;
+Button addButton, minusButton, multiplyButton, divideButton, equalsButton, clearButton, kommaButton, randomButton;
 String input = ""; // Invoer
 float num1 = 0;    // Eerste getal
 char operator = ' '; // Operator (+, -, *, /, , ,backspace)
@@ -11,7 +11,7 @@ void setup() {
   
   // Maak knoppen
   for (int i = 0; i < 10; i++) {
-    numberButtons[9] = new Button (160, 200, 80, 80, str(i));  
+    numberButtons[9] = new Button (160, 200, 80, 80, str(9));  
     numberButtons[8] = new Button (80, 200, 80, 80, str(8));  
     numberButtons[7] = new Button (0, 200, 80, 80, str(7));  
     numberButtons[6] = new Button (160, 280, 80, 80, str(6)); 
@@ -29,13 +29,13 @@ void setup() {
   divideButton = new Button(240, 200, 80, 80, "/");
   equalsButton = new Button(240, 360, 160, 160, "=");
   clearButton = new Button(0, 440, 80, 80, "C");
-  credButton = new Button( 160, 440, 80, 80, "");  
+  randomButton = new Button( 160, 440, 80, 80, "");  
 }
 
 void draw() {
   background(220);
   
-  // Teken de knoppen
+  // De knoppen
   for (Button button : numberButtons) {
     button.display();
   }
@@ -45,13 +45,10 @@ void draw() {
   divideButton.display();
   equalsButton.display();
   clearButton.display();
-  credButton.display();
+  randomButton.display();
 
-  
-  
-  
-  
-  // Teken de invoer
+
+  //De invoer
   fill(100,100,100);
   text(input, width / 2, 100);
 }

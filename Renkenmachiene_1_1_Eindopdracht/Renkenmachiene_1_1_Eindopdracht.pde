@@ -10,19 +10,17 @@ void setup() {
   textAlign(CENTER);
 
   // Maak knoppen
-  for (int i = 0; i < 10; i++) {
-
-    numberButtons[9] = new Button (0, 200, 80, 80, str(i));  
+    numberButtons[9] = new Button (160, 200, 80, 80, str(9));  
     numberButtons[8] = new Button (80, 200, 80, 80, str(8));  
-    numberButtons[7] = new Button (160, 200, 80, 80, str(7));  
-    numberButtons[6] = new Button (0, 280, 80, 80, str(6)); 
+    numberButtons[7] = new Button (0, 200, 80, 80, str(7));  
+    numberButtons[6] = new Button (160, 280, 80, 80, str(6)); 
     numberButtons[5] = new Button (80, 280, 80, 80, str(5));  
-    numberButtons[4] = new Button (160, 280, 80, 80, str(4));  
+    numberButtons[4] = new Button (0, 280, 80, 80, str(4));  
     numberButtons[3] = new Button (160, 360, 80, 80, str(3));  
     numberButtons[2] = new Button (80, 360, 80, 80, str(2));  
     numberButtons[1] = new Button (0, 360, 80, 80, str(1));  
     numberButtons[0] = new Button (80, 440, 80, 80, str(0));  
-  }
+  
 
   addButton = new Button(320, 200, 80, 80, "+");
   minusButton = new Button(320, 280, 80, 80, "-");
